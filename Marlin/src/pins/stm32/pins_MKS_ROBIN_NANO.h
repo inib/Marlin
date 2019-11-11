@@ -39,9 +39,10 @@
 #define DISABLE_DEBUG
 
 // Testing - not working yet
-//#define I2C_EEPROM
-//#undef E2END
-//#define E2END 0x7FF // AT24C16N
+#define SPI_FLASH_EEPROM_EMULATION
+#define SPI_FLASH_EEPROM_OFFSET 0x700000
+#define SPI_FLASH_DEVICE 2
+#define SPI_FLASH_CS_PIN PB12
 
 //
 // Note: MKS Robin board is using SPI2 interface.
